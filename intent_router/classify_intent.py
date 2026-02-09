@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class IntentClassification(BaseModel):
-    intent: Literal["POLICY_QUERY", "ANALYTICS_QUERY", "OUT_OF_SCOPE"] = Field(
+    intent: Literal["POLICY_QUERY", "ANALYTICS_QUERY", "SMALL_TALK","OUT_OF_SCOPE"] = Field(
         description="Final classified intent"
     )
     confidence: float = Field(
@@ -23,7 +23,6 @@ def get_intent_classifier():
     )
 
     return llm.with_structured_output(IntentClassification)
-
 
 def classify_intent(query: str) -> IntentClassification:
     classifier = get_intent_classifier()

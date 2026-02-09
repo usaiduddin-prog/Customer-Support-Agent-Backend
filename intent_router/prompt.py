@@ -21,13 +21,20 @@ ANALYTICS_QUERY:
 - Questions about products, pricing, discounts, orders, sales, inventory,
   comparisons, or any analysis over structured e-commerce data.
 
+SMALL_TALK:
+- Greetings (hi, hello, hey)
+- Politeness (thanks, bye)
+- Identity questions (who are you)
+- Casual conversation not requiring company data
+
 OUT_OF_SCOPE:
-- Queries unrelated to e-commerce policies or product/order data.
+- Queries unrelated to e-commerce or normal conversation
 
 Rules:
 - If the query explicitly requires policy text → POLICY_QUERY
 - If it can be answered using product or order data → ANALYTICS_QUERY
-- If uncertain or unrelated → OUT_OF_SCOPE
+- If it's conversational or social → SMALL_TALK
+- If uncertain → OUT_OF_SCOPE
 - Prefer OUT_OF_SCOPE over guessing
 """
         ),
