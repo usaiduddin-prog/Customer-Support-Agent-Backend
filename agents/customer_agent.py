@@ -1,6 +1,6 @@
 from langchain.agents import create_tool_calling_agent, AgentExecutor
 from langchain_groq import ChatGroq
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 from agents.prompts import SYSTEM_PROMPT
 from tools.langchain_tools import (
     customer_summary_tool,

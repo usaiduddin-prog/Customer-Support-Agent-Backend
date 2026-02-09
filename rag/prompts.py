@@ -1,4 +1,4 @@
-from langchain.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate
 
 RAG_SYSTEM_PROMPT = """
 You are a professional e-commerce customer support assistant.
