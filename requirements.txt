@@ -12,3 +12,4 @@ langchain-groq
 pydantic
 fastapi
 uvicorn
+langchain-text-splitters

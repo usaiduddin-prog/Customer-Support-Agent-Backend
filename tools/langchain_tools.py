@@ -1,4 +1,4 @@
-from langchain.tools import tool
+from langchain_core.tools import tool
 from typing import Optional
 
 from tools.product_tools import (

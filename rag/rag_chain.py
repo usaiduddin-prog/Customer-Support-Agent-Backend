@@ -1,7 +1,7 @@
 from rag.retriever import load_retriever
 from rag.generator import get_llm
 from rag.prompts import RAG_PROMPT
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 def format_docs(docs: list[Document]) -> str:
     return "\n\n".join(
